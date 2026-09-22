@@ -94,9 +94,9 @@ whatweb https://example.com
 | **HTTP Headers/Cookies** | Session cookie names, security headers, and other server-set values |
 
 ### Screenshot
-```
+
 ![WhatWeb terminal output](screenshots/02-whatweb.png)
-```
+
 
 ### Example Observations
 A beginner might typically observe a detected web server type, possibly a CMS if one is in use, and a handful of supporting technology tags — without knowing in advance which will appear, since this depends entirely on the target.
@@ -136,9 +136,9 @@ nslookup example.com
 **Important:** The resolved IP address does not necessarily represent the "real" origin server. Many sites sit behind a CDN, reverse proxy, or load balancer (e.g., Cloudflare), meaning the IP you see belongs to the CDN edge node — not the actual backend infrastructure.
 
 ### Screenshot
-```
+
 ![nslookup terminal output](screenshots/03-nslookup.png)
-```
+
 
 ### Example Observations
 A beginner would typically see one or more resolved IPv4 addresses, and possibly an IPv6 address, associated with the domain.
@@ -183,9 +183,9 @@ curl -I https://example.com
 | **Other Security Headers** | e.g., `X-Content-Type-Options`, `Referrer-Policy` when present |
 
 ### Screenshot
-```
+
 ![curl -I response headers](screenshots/04-curl-headers.png)
-```
+
 
 ### Example Observations
 A beginner would typically see a status code, some server-identifying header (or its deliberate absence), and a mix of caching/security headers — the exact combination depends entirely on how the target is configured.
@@ -220,9 +220,9 @@ wafw00f https://example.com
 ```
 
 ### Screenshot
-```
+
 ![WAFW00F terminal output](screenshots/05-wafw00f.png)
-```
+
 
 ### Example Observations
 A beginner might see a message indicating a WAF was detected (naming a possible vendor) or a message indicating no WAF could be identified — the actual result depends on the target's real configuration.
@@ -265,9 +265,9 @@ dnsrecon -d example.com
 | **PTR** | Reverse DNS mapping (IP → hostname), where applicable |
 
 ### Screenshot
-```
+
 ![DNSRecon terminal output](screenshots/06-dnsrecon.png)
-```
+
 
 ### Example Observations
 A beginner would typically see a structured list of the record types above, populated only where the domain actually has them configured — for example, MX records only appear if the domain handles email.
