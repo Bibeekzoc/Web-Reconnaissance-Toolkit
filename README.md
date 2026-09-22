@@ -21,7 +21,7 @@ A beginner-friendly walkthrough of six passive/basic reconnaissance tools common
 
 ---
 
-## Task 1 — WHOIS
+## 1 — WHOIS
 
 ### Objective
 Discover the registration details behind a domain name — who registered it, when, through which registrar, and how it is currently managed — to build a basic picture of the target's ownership and administrative footprint.
@@ -67,7 +67,7 @@ Registrar and nameserver information can hint at the hosting provider or infrast
 
 ---
 
-## Task 2 — WhatWeb
+## 2 — WhatWeb
 
 ### Objective
 Identify the technologies powering a website — its web server, content management system (CMS), frameworks, and other software components.
@@ -110,7 +110,7 @@ Knowing the exact software stack narrows down which vulnerabilities, default con
 
 ---
 
-## Task 3 — nslookup
+## 3 — nslookup
 
 ### Objective
 Resolve the domain name to its underlying IP address(es) as a first step toward understanding where the site is hosted.
@@ -152,7 +152,7 @@ The resolved IP is a starting point for further passive lookups (e.g., identifyi
 
 ---
 
-## Task 4 — curl -I
+## 4 — curl -I
 
 ### Objective
 Retrieve the raw HTTP response headers returned by a web server to understand how it responds, what technologies it exposes, and what security controls are configured.
@@ -199,7 +199,7 @@ Response headers reveal server software versions (useful for identifying known v
 
 ---
 
-## Task 5 — WAFW00F
+## 5 — WAFW00F
 
 ### Objective
 Determine whether the target website is protected by a Web Application Firewall (WAF), and if possible, identify which vendor's WAF is in use.
@@ -236,7 +236,7 @@ Knowing whether a WAF is present shapes how further testing should be approached
 
 ---
 
-## Task 6 — DNSRecon
+## 6 — DNSRecon
 
 ### Objective
 Enumerate the broader set of DNS records associated with a domain to build a more complete picture of its infrastructure beyond a single A record lookup.
@@ -285,9 +285,7 @@ A fuller DNS record set helps map out related infrastructure — mail servers, v
 
 A simple, beginner-friendly way to chain these six tools into a basic reconnaissance pass:
 
-```
-WHOIS → WhatWeb → nslookup → curl -I → wafw00f → DNSRecon
-```
+
 
 1. **WHOIS** — Start with ownership and registration context.
 2. **WhatWeb** — Identify the technology stack running on the site.
@@ -313,31 +311,6 @@ Each step builds on the last: registration and hosting context → software stac
 
 ---
 
-## Screenshot Organization
-
-Suggested repository structure for organizing this project on GitHub:
-
-```
-recon-tools/
-├── README.md
-├── screenshots/
-│   ├── 01-whois.png
-│   ├── 02-whatweb.png
-│   ├── 03-nslookup.png
-│   ├── 04-curl-headers.png
-│   ├── 05-wafw00f.png
-│   └── 06-dnsrecon.png
-└── docs/
-```
-
-- Keep screenshot filenames numbered to match the task order for easy navigation.
-- Store any longer-form notes, write-ups, or additional explanation in `docs/`.
-- Reference each screenshot inline in this README once captured, e.g.:
-  ```markdown
-  ![WHOIS output](screenshots/01-whois.png)
-  ```
-
----
 
 ## Disclaimer
 
