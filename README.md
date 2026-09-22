@@ -51,9 +51,9 @@ whois example.com
 **Note:** WHOIS output varies significantly depending on the registrar, the registry (TLD operator), applicable privacy regulations (e.g., GDPR), and whether the domain has moved to RDAP-only responses. Don't assume the absence of a field means the data doesn't exist — it may simply be redacted.
 
 ### Screenshot
-```
+
 ![WHOIS terminal output](screenshots/01-whois.png)
-```
+
 
 ### Example Observations
 Without inventing real data, a beginner running this command might typically notice things like: a named registrar, a set of nameservers pointing to a specific DNS/hosting provider, and registrant fields that are partially or fully redacted due to privacy protection.
