@@ -21,7 +21,7 @@ A beginner-friendly walkthrough of six passive/basic reconnaissance tools common
 
 ---
 
-## 1 — WHOIS
+##  1 — WHOIS
 
 ### Objective
 Discover the registration details behind a domain name — who registered it, when, through which registrar, and how it is currently managed — to build a basic picture of the target's ownership and administrative footprint.
@@ -52,7 +52,7 @@ whois example.com
 
 ### Screenshot
 ```
-[INSERT WHOIS TERMINAL SCREENSHOT HERE]
+![WHOIS terminal output](screenshots/01-whois.png)
 ```
 
 ### Example Observations
@@ -67,7 +67,7 @@ Registrar and nameserver information can hint at the hosting provider or infrast
 
 ---
 
-## 2 — WhatWeb
+##  2 — WhatWeb
 
 ### Objective
 Identify the technologies powering a website — its web server, content management system (CMS), frameworks, and other software components.
@@ -95,7 +95,7 @@ whatweb https://example.com
 
 ### Screenshot
 ```
-[INSERT WHATWEB TERMINAL SCREENSHOT HERE]
+![WhatWeb terminal output](screenshots/02-whatweb.png)
 ```
 
 ### Example Observations
@@ -110,7 +110,7 @@ Knowing the exact software stack narrows down which vulnerabilities, default con
 
 ---
 
-## 3 — nslookup
+##  3 — nslookup
 
 ### Objective
 Resolve the domain name to its underlying IP address(es) as a first step toward understanding where the site is hosted.
@@ -137,7 +137,7 @@ nslookup example.com
 
 ### Screenshot
 ```
-[INSERT NSLOOKUP TERMINAL SCREENSHOT HERE]
+![nslookup terminal output](screenshots/03-nslookup.png)
 ```
 
 ### Example Observations
@@ -152,7 +152,7 @@ The resolved IP is a starting point for further passive lookups (e.g., identifyi
 
 ---
 
-## 4 — curl -I
+##  4 — curl -I
 
 ### Objective
 Retrieve the raw HTTP response headers returned by a web server to understand how it responds, what technologies it exposes, and what security controls are configured.
@@ -184,7 +184,7 @@ curl -I https://example.com
 
 ### Screenshot
 ```
-[INSERT CURL RESPONSE HEADERS SCREENSHOT HERE]
+![curl -I response headers](screenshots/04-curl-headers.png)
 ```
 
 ### Example Observations
@@ -199,7 +199,7 @@ Response headers reveal server software versions (useful for identifying known v
 
 ---
 
-## 5 — WAFW00F
+##  5 — WAFW00F
 
 ### Objective
 Determine whether the target website is protected by a Web Application Firewall (WAF), and if possible, identify which vendor's WAF is in use.
@@ -221,7 +221,7 @@ wafw00f https://example.com
 
 ### Screenshot
 ```
-[INSERT WAFW00F SCREENSHOT HERE]
+![WAFW00F terminal output](screenshots/05-wafw00f.png)
 ```
 
 ### Example Observations
@@ -236,7 +236,7 @@ Knowing whether a WAF is present shapes how further testing should be approached
 
 ---
 
-## 6 — DNSRecon
+##  6 — DNSRecon
 
 ### Objective
 Enumerate the broader set of DNS records associated with a domain to build a more complete picture of its infrastructure beyond a single A record lookup.
@@ -266,7 +266,7 @@ dnsrecon -d example.com
 
 ### Screenshot
 ```
-[INSERT DNSRECON SCREENSHOT HERE]
+![DNSRecon terminal output](screenshots/06-dnsrecon.png)
 ```
 
 ### Example Observations
@@ -310,6 +310,7 @@ Each step builds on the last: registration and hosting context → software stac
 | **DNSRecon** | DNS record enumeration | A, AAAA, MX, NS, CNAME, TXT, SOA, PTR records | `dnsrecon -d example.com` |
 
 ---
+
 
 
 ## Disclaimer
