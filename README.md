@@ -17,7 +17,7 @@ A beginner-friendly walkthrough of six passive/basic reconnaissance tools common
 6. [DNSRecon](#task-6--dnsrecon)
 7. [Reconnaissance Workflow](#reconnaissance-workflow)
 8. [Comparison Table](#comparison-table)
-9. [Screenshot Organization](#screenshot-organization)
+
 
 ---
 
